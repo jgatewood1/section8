@@ -1,1 +1,47 @@
+import java.util.Scanner;
+
+public class StampLoop {
+
+public static void main(String[] args) {
+
+Scanner input = new Scanner(System.in);
+
+double postage, sum = 0.0;
+
+do {
+
+System.out.printf("Enter a weight in ounce for letters to mail out.\n");
+
+System.out.printf("When you are done entering, please enter -1 to finish:\n");
+
+postage = input.nextDouble();
+
+sum += postage;
+
+if (postage <= 1.0 && postage >= 0.00) {
+
+System.out.printf("You can use forever stamp.\n");
+
+}
+
+else if (postage >= 1.1) {
+
+System.out.printf("You need additional postage than a forever stamp.\n");
+
+}
+
+else {
+
+}
+
+}
+
+while (postage != -1);
+
+System.out.println("Good bye!!");
+
+}
+
+}
+
 
